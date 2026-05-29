@@ -11,7 +11,7 @@ require('dotenv').config();
 const { db, pool } = require('./db');
 
 const SUPPORT_SERVER = 'https://discord.gg/WsbwZaYAtj';
-const BRAND_COLOR = 0x3498db; // River City RC blue
+const BRAND_COLOR = 0xA97AB9; // River City RC purple
 
 const client = new Client({
   intents: [
@@ -131,7 +131,7 @@ function infoEmbed(title, description) {
 /** Build an error embed */
 function errorEmbed(description) {
   return new EmbedBuilder()
-    .setColor(0xe74c3c)
+    .setColor(0xA97AB9)
     .setTitle('❌ Error')
     .setDescription(description)
     .setTimestamp()
